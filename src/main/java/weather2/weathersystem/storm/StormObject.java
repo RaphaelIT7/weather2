@@ -2459,7 +2459,7 @@ public class StormObject extends WeatherObject {
 
 			entity.setDeltaMovement(spinObject(entity.position(), entity.getDeltaMovement(), entity instanceof Player, dampenXZ, dampenY, false, grabAdj));
 
-			if (!ConfigTornado.Storm_Tornado_fallDamage || CoroUtilEntOrParticle.getMotionY(entity) > -0.8)
+			if (!ConfigTornado.Storm_Tornado_fallDamage)
 			{
 				entity.fallDistance = 0F;
 			}
